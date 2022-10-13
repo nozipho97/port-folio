@@ -1,0 +1,82 @@
+/*
+margin: 0;
+padding: 0;
+
+ */
+body{
+    background: whitesmoke;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0%; left: 0;
+    z-index: 1000%;
+    height: 100%;
+    width: 25rem;
+    background-color: navajowhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--pink);
+}
+
+header .user .name{
+    font-size: 3.rem;
+    color: tomato;
+}
+
+header .user .post{
+    font-size: 1rem;
+    color: slateblue;
+}
+
+header .nav-bar{
+    width: 100%;
+}
+
+header .nav-bar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .nav-bar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem 0;
+    background: #ccc;
+    color: #333;
+    font-size: px;
+    width: 10rem ;
+    border-radius: 5rem;
+}
+
+header .nav-bar ul li a:hover{
+    background:var(--pink);
+}
+
+#menu{
+    position: fixed;
+    top: 2rem; right:2rem;
+    background: #333;
+    color: #111;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem;
+    z-index: 1000;
+    display: none;
+}
+
+
