@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,7 @@
     />
   
 
-    <title>Portfolio</title>
+    <title>Nozipho Mayila</title>
 
     <!--font awesome cnd link-->
     <link
@@ -40,34 +40,32 @@
     <!--header starts-->
     <header>
       <div class="user">
-        <img src="./images/picturee.jpg" alt="logo" />
+        <img src="https://i.postimg.cc/SRRk1Pw0/Nozipho-Mayila-picture-1.jpg" alt="logo" />
         <h3 class="name">Nozipho Mayila</h3>
         <p class="post">Front end developer</p>
       </div>
 
       <nav class="navbar" >
         <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#education">education</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#testimonials">testimonials</a></li>
-          <li><a href="#contact">contact</a></li>
-          
-
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <!--header ends-->
-      <div class="menu">
+      <!-- <div class="menu">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#education">education</a>
         <a href="#projects">projects</a>
         <a href="#contact Me"><span>Contact Me</span></a>
       </div>
-    </div> 
+    </div>  -->
     
 
     <!--home section starts -->
@@ -353,43 +351,59 @@
       </section>
 
       <!--contact section starts-->
-      <section class="contact" id="contact">
-        <h1 class="heading"> <span>contact </span>me</h1>
+      <h1 class="heading">Contact<span> Us</span></h1>
+      <div class="contain">
 
-        <link rel="stylesheet" href="https://formspree.io/f/xpznoejl">
-        <section class="form-group">
-        <div class="box-container">
-          <div class="box">
-          <label for="user">Name:</label>
-          <input type="text" required class="form-control" id="user">
-        </div>
-
-        <div class="form-group">
-          <label for="pwd">Email address:</label>
-          <textarea name="form-control"  rows="1"></textarea>
-          <input type="email" class="form-control" id="pwd">
-        </div>
-
-        <div class="form-group">
-          <label for="comment">Messege:</label>
-          <textarea class="form-control" rows="5" id="comment"></textarea>
-          <button type="button" class="btn btn-warning">Submit</button>
-        </div>
-        </div>
-
-        <div class="box-container">
-          <div class="content-f">
-            <h3>contact info</h3>
-            <div class="info">
-              <h4><i class="fas fa-envelope"></i>mayilanozipho@gmail.com</h4>
-              <h4><i class="fas fa-phone"></i>+27 68 326 4041</h4>
-              <h4><i class="fas fa-phone"></i>+27 71 500 9730</h4>
-              <h4><i class="fas fa-map-pin"></i><a href="https://www.google.com/search?q=314+imam+haron+road&oq=314&aqs=chrome.6.69i57j46i512j0i67j46i175i199i512j0i512l6.3586j1j15&sourceid=chrome&ie=UTF-8#">314 imam haron rd, lansdowne, cape town - 7780</a></h4>
-            </div>
+        <div class="wrapper">
+      
+          <div class="form">
+            <h4>GET IN TOUCH</h4>
+            <h2 class="form-headline">Send us a message</h2>
+            <form id="submit-form" action="https://formspree.io/f/xzbqvlgp"  method="post">
+              <p>
+                <input id="name" class="form-input" type="text" placeholder="Your Name*">
+                <small class="name-error"></small>
+              </p>
+              <p>
+                <input id="email" class="form-input" type="email" placeholder="Your Email*">
+                <small class="name-error"></small>
+              </p>
+              <p class="full-width">
+                <input id="company-name" class="form-input" type="text" placeholder="Company Name*" required>
+                <small></small>
+              </p>
+              <p class="full-width">
+                <textarea  minlength="10" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                <small></small>
+              </p>
+              <p class="full-width">
+                <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about Restuarant's services.
+              </p>
+              <p class="full-width">
+                <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+                <button class="reset-btn" onclick="reset()">Reset</button>
+              </p>
+            </form>
+          </div>
+      
+          <div class="contacts contact-wrapper">
+      
+            <ul>
+              <li>We're people driven and provide high profile <span class="highlight-text-grey">service</span> for our clients. Ready to know
+                how we can help you?</li>
+              <span class="hightlight-contact-info">
+                <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> seeklounge@gmail.com</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+27 68 652 2900</span></li>
+              </span>
+              <i class="fa-brands fa-facebook" href="https://www.facebook.com/seekcpt/about_profile_transparency"></i>
+              <i class="fa-brands fa-whatsapp" href="#"></i>
+              <i class="fa-brands fa-instagram" href="https://www.instagram.com/seekcpt/"></i>
+               
+            </ul>
+    
           </div>
         </div>
-
-      </section>
+      </div>
 
       <!--contact section ends-->
 
@@ -401,19 +415,7 @@
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>  
-            <p class="text-justify">Nozipho Mayila <i>YOUNG AND AMBITIOUS LADY </i> Passionate about programming</p>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <h6>Categories</h6>
-            <ul class="footer-links">
-              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-            </ul>
+            <p class="text-justify">Nozipho Mayila <i>YOUNG AND AMBITIOUS</i> Passionate about programming</p>
           </div>
 
           <div class="col-xs-6 col-md-3">
@@ -431,19 +433,17 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
-            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by Nozipho Mayila
          <a href="#"></a>.
             </p>
           </div>
 
           <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="facebook" href="https://www.facebook.com/aphindiweMayila97"><i class="fa fa-facebook"></i></a></li>
               <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>  
-              <i><a class="linkedin" href="#"><i class="fa fa-github"></i></a></li>  
-              <i><a class="linkedin" href="#"><i class="fa fa-netlify"></i></a></li>  
-               
+              <li><a class="linkedin" href="https://www.linkedin.com/in/nozipho-mayila-b03766210/"><i class="fa fa-linkedin"></i></a></li>  
+              <i><a class="github" href="https://github.com/nozipho97"><i class="fa fa-github"></i></a></li>  
             </ul>
           </div>
         </div>
